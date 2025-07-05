@@ -351,10 +351,19 @@ namespace Assignment_Session_4
             //        result *= number1;
             //    }
             //}
-            //else
+
+            //else 
             //{
-            //    Console.WriteLine(" not support ");
+            //    for (int i = bower; i < 0; i++)
+            //    {
+            //        result *= number1;
+            //    }
+
+            //    Console.WriteLine($"Result = {1 / result}");
+
             //}
+
+           
             //Console.WriteLine(number1 + " ^ " + bower + " = " + result);
 
             #endregion
@@ -590,21 +599,32 @@ namespace Assignment_Session_4
                 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47
              */
 
-            //Console.WriteLine(" Enter a Start number  :");
-            //int start = int.Parse(Console.ReadLine());
-
-            //Console.WriteLine(" Enter a End Number :");
-            //int end = int.Parse(Console.ReadLine());
-
-            //for (int i = start; i < end; i++)
-            //{
 
 
-            //    // ??????????????????//
 
+            bool flag01 , flag02;
+            int Start, End, count;
 
-            //}
+            do
+            {
+                Console.WriteLine(" Enter Number 1 ");
+                flag01 = int.TryParse(Console.ReadLine(), out Start);
+                Console.WriteLine(" Enter Number 2 ");
+                flag02 = int.TryParse(Console.ReadLine(), out End);
+            }
+            while (!(flag01 && flag02));
+            for (int i = Start; i <= End; i++)
+            {
+                count = 0;
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i % j == 0)
+                        count++;
+                }
 
+                if (count == 2 && i != 1)
+                    Console.WriteLine(i);
+            }
 
 
 
