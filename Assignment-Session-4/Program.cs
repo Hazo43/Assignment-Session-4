@@ -602,29 +602,29 @@ namespace Assignment_Session_4
 
 
 
-            bool flag01 , flag02;
-            int Start, End, count;
+            //bool flag01 , flag02;
+            //int Start, End, count;
 
-            do
-            {
-                Console.WriteLine(" Enter Number 1 ");
-                flag01 = int.TryParse(Console.ReadLine(), out Start);
-                Console.WriteLine(" Enter Number 2 ");
-                flag02 = int.TryParse(Console.ReadLine(), out End);
-            }
-            while (!(flag01 && flag02));
-            for (int i = Start; i <= End; i++)
-            {
-                count = 0;
-                for (int j = 1; j <= i; j++)
-                {
-                    if (i % j == 0)
-                        count++;
-                }
+            //do
+            //{
+            //    Console.WriteLine(" Enter Number 1 ");
+            //    flag01 = int.TryParse(Console.ReadLine(), out Start);
+            //    Console.WriteLine(" Enter Number 2 ");
+            //    flag02 = int.TryParse(Console.ReadLine(), out End);
+            //}
+            //while (!(flag01 && flag02));
+            //for (int i = Start; i <= End; i++)
+            //{
+            //    count = 0;
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        if (i % j == 0)
+            //            count++;
+            //    }
 
-                if (count == 2 && i != 1)
-                    Console.WriteLine(i);
-            }
+            //    if (count == 2 && i != 1)
+            //        Console.WriteLine(i);
+            //}
 
 
 
